@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>إمبراطورية RYUKO</title>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --accent: #f5c518;
+      --text: #e8e8e8;
+      --muted: #b5b5b5;
+      --card: #131313;
+    }
+    * {box-sizing: border-box; margin: 0; padding: 0;}
+    body {
+      font-family: "Tajawal", system-ui, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      background: rgba(20,20,20,0.9);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding: 18px 28px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: var(--accent);
+    }
+    nav a {
+      margin-left: 20px;
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color .2s;
+    }
+    nav a:hover { color: var(--accent); }
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: linear-gradient(180deg, #0a0a0a, #101010);
+    }
+    .hero h1 {
+      font-size: 60px;
+      color: var(--accent);
+      margin-bottom: 20px;
+      letter-spacing: 4px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .section {
+      max-width: 960px;
+      margin: 60px auto;
+      padding: 0 16px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    }
+    .card h2 {
+      color: var(--accent);
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      background: #0a0a0a;
+    }
+    .image-section {
+      text-align: center;
+      margin-top: 40px;
+    } 
+    .character-img { 
+      width: 280px; 
+      border-radius: 16px; 
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.4); 
+    }
+    .button-link {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: var(--accent);
+      color: #000;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+    .button-link:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">إمبراطورية RYUKO</div>
+    <nav>
+      <a href="#about">عن</a>
+      <a href="#vision">الرؤية</a>
+      <a href="#projects">المشاريع</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+  </header>  
+
+  <section class="hero">
+    <h1>امبراطورية RYUKO</h1>
+    <p>منظمة فخمة، راقية، ومنضبطة. تعمل في صمت، وتتحرك بثقة نحو التميز والهيمنة التقنية.</p>
+  </section>  
+
+  <section id="about" class="section">
+    <div class="card">
+      <h2>عن المنظمة</h2>
+      <p>تأسست منظمة RYUKO لتكون رمزًا للفخامة والانضباط في عالم التقنية. نؤمن أن القوة الحقيقية تكمن في البساطة، والنظام، والإبداع الموجه نحو هدف واحد: السيطرة على الجودة.</p>
+    </div>
+  </section>  
+
+  <section id="vision" class="section">
+    <div class="card">
+      <h2>رؤيتنا</h2>
+      <p>نطمح إلى بناء إرث رقمي خالد، يعتمد على قيم الاحترام، الإتقان، والسرية. نحن لا نتحدث كثيرًا، إنما نترك مشاريعنا تتحدث عنا.</p>
+    </div>
+  </section>  
+
+  <section id="projects" class="section">
+    <div class="card">
+      <h2>المشاريع</h2>
+      <p>نطور حلولًا تقنية راقية، تطبيقات خاصة، وأدوات تحليلية متقدمة. كل مشروع هو بصمة من التميز تعكس هوية RYUKO.</p>
+    </div>
+  </section>  
+
+  <section id="contact" class="section">
+    <div class="card">
+      <h2>التواصل</h2>
+      <p>يمكن التواصل معنا عبر البريد الرسمي للمنظمة أو من خلال حساباتنا الخاصة على GitHub و Discord. الانضمام بالترشيح فقط.</p>
+    </div>
+  </section>  
+
+  <section class="section" id="ranks">
+    <div class="card" style="text-align:center;">
+      <h2 style="color: var(--accent); margin-bottom:18px;">اطلع على الرتب العليا</h2>
+      <a href="ranks.html" class="button-link">اطلع على الرتب العليا</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 RYUKO — جميع الحقوق محفوظة.
+  </footer>
+</body>
+  </html>
